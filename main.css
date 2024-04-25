@@ -1,0 +1,52 @@
+.btn__group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 900px;
+}
+
+.reset-btn {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn__group-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+.btn__group-item:not(:last-child) {
+    background: linear-gradient(180deg, rgba(126, 130, 238, 0.60) 0%, rgba(126, 130, 238, 0.90) 100%);
+    border: 1px solid #7B7EF1;
+}
+
+.btn__group-item:not(:last-child):hover {
+    background: #464CE3;
+    border: 1px solid #464CE3;
+}
+
+.btn__group-item:last-child {
+    background: linear-gradient(180deg, rgba(240, 88, 88, 0.60) 0%, rgba(240, 88, 88, 0.90) 100%);
+    border: 1px solid #E34F4F;
+}
+
+.btn__group-item:last-child:hover {
+    background: #DC2D2D;
+    border: 1px solid #CE4141;
+}
+
+.btn__group-item:nth-child(1) {
+    border-radius: 6px 0 0 6px;
+}
+
+.btn__group-item:last-child {
+    border-radius: 0 6px 6px 0;
+}
